@@ -33,6 +33,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>zTWArena.App</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="GammaJul.LgLcd">
       <HintPath>..\..\..\..\..\General Libraries\C#\GammaJul.LgLcd - 1.1.4 - Binaries\GammaJul.LgLcd.dll</HintPath>
@@ -103,6 +109,7 @@
     <Content Include="GammaJul.LgLcd.Native64.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Resource Include="icon.ico" />
     <None Include="Resources\zTWArenaBG.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

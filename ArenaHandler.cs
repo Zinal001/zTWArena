@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
 using System.Text;
 using System.Timers;
 
@@ -63,8 +60,6 @@ namespace zTWArena
         private Timer updateTimer;
 
         private FileStream logFS;
-
-        private int logFSIndex = 0;
 
         private StreamReader logReader;
 

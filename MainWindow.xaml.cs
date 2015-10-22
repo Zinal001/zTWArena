@@ -1,19 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using GammaJul.LgLcd;
+﻿using GammaJul.LgLcd;
+using System;
 using System.Drawing;
 using System.Timers;
+using System.Windows;
 
 namespace zTWArena
 {
@@ -53,6 +42,13 @@ namespace zTWArena
 
             runningTimer.AutoReset = true;
             runningTimer.Elapsed += RunningTimer_Elapsed;
+
+            this.Loaded += MainWindow_Loaded;
+        }
+
+        private void MainWindow_Loaded(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
         }
 
         private void RunningTimer_Elapsed(object sender, ElapsedEventArgs e)

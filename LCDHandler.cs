@@ -1,16 +1,10 @@
-﻿using System;
+﻿using GammaJul.LgLcd;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using GammaJul.LgLcd;
 
 namespace zTWArena
 {
-    class LCDHandler
-    {
-
-    }
-
     class zLCDDevice
     {
         private LcdDevice _Device;
