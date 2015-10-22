@@ -44,7 +44,7 @@ namespace zTWArena
         }
     }
 
-    class ArenaHandler
+    class ArenaHandler : IDisposable
     {
         private static readonly UTF8Encoding UTF8WHBom = new UTF8Encoding(false);
 
@@ -202,5 +202,10 @@ namespace zTWArena
                 this.OnLine(this, new OnLineEventArgs(timeStr, fileStr, message));
         }
 
+        public void Dispose()
+        {
+            if (this.Started)
+                this.Stop();
+        }
     }
 }
