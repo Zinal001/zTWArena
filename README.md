@@ -1,4 +1,4 @@
-# zTWArena - LCD Applet for Logitech G13/G510
+## zTWArena - LCD Applet for Logitech G13/G510
 
 **A Total War: Arena LCD Applet for G13/G510**
 
