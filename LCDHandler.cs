@@ -115,7 +115,11 @@ namespace zTWArena
 
         public void DoUpdateAndDraw()
         {
-            this._Device.DoUpdateAndDraw();
+            try
+            {
+                this._Device.DoUpdateAndDraw();
+            }
+            catch { }
         }
 
         private void _Device_SoftButtonsChanged(object sender, LcdSoftButtonsEventArgs e)

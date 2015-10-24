@@ -65,7 +65,7 @@ namespace zTWArena
                 _Device = new zLCDDevice(device);
                 SetupDevice();
                 _Device.SetAsForegroundApplet = true;
-                
+
                 runningTimer.Start();
             }
         }
@@ -241,7 +241,6 @@ namespace zTWArena
 
                 Console.WriteLine("Exiting Matchmaking, Entering Battle");
             }
-
         }
 
         private String Capitalize(String str)
